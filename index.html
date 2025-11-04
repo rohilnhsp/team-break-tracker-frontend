@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Break Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Team Break Tracker</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Status</th>
+        </tr>
+        <tbody id="team-status"></tbody>
+    </table>
+
+    <h3>Update Status</h3>
+    <form id="status-form">
+        <label for="name">Team Member Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="status">Status:</label>
+        <select id="status" name="status" required>
+            <option value="On Break">On Break</option>
+            <option value="Back from Break">Back from Break</option>
+        </select><br>
+
+        <button type="submit">Update Status</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
